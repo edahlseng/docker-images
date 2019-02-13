@@ -1,4 +1,4 @@
-terraformVersions=0.11.8 0.11.9 0.11.10
+terraformVersions=0.11.8 0.11.9 0.11.10 0.11.11
 
 default: push
 
