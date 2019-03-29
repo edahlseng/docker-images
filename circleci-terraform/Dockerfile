@@ -1,5 +1,5 @@
 ARG terraformVersion
-FROM edahlseng/terraform:${terraformVersion}-jessie
+FROM edahlseng/terraform:${terraformVersion}-stretch
 
 # Everything from this point and below is copied from: https://github.com/circleci/circleci-images/blob/889c8f81898efa4afb7c71c00493c9306352be89/shared/images/Dockerfile-basic.template
 

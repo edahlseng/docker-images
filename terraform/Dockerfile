@@ -1,4 +1,4 @@
-FROM debian:jessie as builder
+FROM debian:stretch as builder
 ARG terraformVersion
 
 RUN apt-get update \
@@ -9,6 +9,6 @@ RUN wget https://releases.hashicorp.com/terraform/${terraformVersion}/terraform_
 	&& rm terraform_${terraformVersion}_linux_amd64.zip \
 	&& mv terraform /usr/local/bin
 
-FROM debian:jessie as artifact
+FROM debian:stretch as artifact
 
 COPY --from=builder /usr/local/bin /usr/local/bin
